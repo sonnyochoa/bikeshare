@@ -25,9 +25,9 @@ TODO: Add your explanation
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+|initial|default|default|default|1.80581|
+|add_features|default|default|default|0.69207|
+|hpo|nn_options = { 'num_epochs': 50, 'learning_rate': ag.space.Real(1e-4, 1e-2, default=5e-4, 'activation': ag.space.Categorical('relu', 'softrelu', 'tanh'), 'dropout_prob': ag.space.Real(0.5, 0.8, default=0.1),}|gbm_options = { 'num_boost_round': 100, 'num_leaves': ag.space.Int(lower=68, upper=100, default=36),}|num_bag_folds=10, num_bag_sets=1|0.46771|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
