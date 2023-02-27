@@ -3,10 +3,10 @@
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+The initial model I submitted performed poorly. I needed modify the parsing of the datetime column to certain `dt` features in pandas. I also needed to ensure that all predictions were `> 0`.
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+`WeightedEnsemble_L3`
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
@@ -20,7 +20,7 @@ TODO: Add your explanation
 TODO: Add your explanation
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
-TODO: Add your explanation
+Given more time I would spend it on exploratory data analysis, which can help us identify data quality issues such as missing values, outliers, or inconsistent data, which can affect the performance of the machine learning model.. With a better understanding of the dataset, it can help with engineering new features from the existing data, which can improve the performance of the machine learning model.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
